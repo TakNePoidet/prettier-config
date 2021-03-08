@@ -1,0 +1,14 @@
+{
+  "name": "taknepoidet-prettier-config",
+  "version": "1.0.0",
+  "description": "Конфигурация Prettier",
+  "main": "index.js",
+  "scripts": {
+    "test": "prettier --write test/**"
+  },
+  "author": "TakPePoidet <taknepoidet@yandex.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
