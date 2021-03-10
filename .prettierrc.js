@@ -16,5 +16,6 @@ module.exports = {
   "tabWidth": 2,
   "useTabs": true,
   "endOfLine": "crlf",
-  "vueIndentScriptAndStyle": false
+  "vueIndentScriptAndStyle": false,
+	bracketSpacing: true,
 }
