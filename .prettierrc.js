@@ -15,7 +15,7 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   useTabs: true,
-  endOfLine: 'crlf',
+  endOfLine: 'lf',
   vueIndentScriptAndStyle: false,
 	bracketSpacing: true,
 }

@@ -7,9 +7,7 @@ function Sidebar(): IApiSidebar {
 	let overlay = document.getElementById('page-overlay-sidebar');
 
 	function getScrollbarWidth(): string {
-		return (
-			window.innerWidth - document.documentElement.clientWidth
-		).toString();
+		return (window.innerWidth - document.documentElement.clientWidth).toString();
 	}
 
 	function getSidebarContainer(): HTMLElement | undefined {

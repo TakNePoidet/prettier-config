@@ -23,11 +23,7 @@ function scroll(el, direction) {
 			result = direction;
 		}
 
-		if (
-			direction * top > 0 &&
-			pageHeight - window.pageYOffset >
-				direction * document.documentElement.clientHeight
-		) {
+		if (direction * top > 0 && pageHeight - window.pageYOffset > direction * document.documentElement.clientHeight) {
 			window.scrollBy(0, result);
 			requestAnimationFrame(fn);
 		}
@@ -36,17 +32,16 @@ function scroll(el, direction) {
 	requestAnimationFrame(fn);
 }
 
-export default function scrollToAnhor(anhor) {
-	if (!anhor) {
+export default function scrollToAnchor(anchor) {
+	if (!anchor) {
 		return false;
 	}
 	let heightHeader = 0;
 
 	if (document.querySelector('header')) {
-		heightHeader = document.querySelector('header').getBoundingClientRect()
-			.height;
+		heightHeader = document.querySelector('header').getBoundingClientRect().height;
 	}
-	const startY = anhor.getBoundingClientRect().top + heightHeader;
+	const startY = anchor.getBoundingClientRect().top + heightHeader;
 	let direction;
 
 	if (startY < 0) {
@@ -60,7 +55,7 @@ export default function scrollToAnhor(anhor) {
 	if (direction === 0) {
 		return undefined;
 	}
-	scroll(anhor, direction);
+	scroll(anchor, direction);
 
 	return undefined;
 }
